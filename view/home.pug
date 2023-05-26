@@ -1,0 +1,18 @@
+html
+  head
+    title Add Student
+    link(rel='stylesheet', type='text/css', href='../assets/css/style.css')
+  body
+    h1 Add Student
+    .container
+      a.active(href='/') Add Student
+      a(href='/users' style="margin-left: 50px") All Students
+      a(href='/calculator' style="margin-left: 50px") Calculator
+      form(action='/add-student', method='POST' style="margin-top: 30px")
+        label(for='name') Name:
+        input(type='text', id='name', name='name', required)
+        br
+        label(for='birth') Birthdate:
+        input(type='date', id='birth', name='birth', required)
+        br
+        button(type='submit') Add Student

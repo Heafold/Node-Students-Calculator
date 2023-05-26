@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Users
+    link(rel='stylesheet', type='text/css', href='../assets/css/style.css')
+  body
+    h1 Users
+    .container
+        a(href='/') Add Student
+        a.active(href='/users' style="margin-left: 50px") All Students
+        a(href='/calculator' style="margin-left: 50px") Calculator
+        ul
+        each student in students
+            li= `${student.name}, Birth date: ${student.birth}`
+            form.delete-form(action='/delete-student', method='POST')
+                input(type='hidden', name='name', value=student.name)
+                button(type='submit') Delete
+
+

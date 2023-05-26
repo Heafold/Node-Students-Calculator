@@ -1,0 +1,26 @@
+html
+  head
+    title Calculator
+    link(rel='stylesheet', type='text/css', href='../assets/css/style.css')
+  body
+    h1 Calculator
+    .container
+      a(href='/') Add Student
+      a(href='/users' style="margin-left: 50px") All Students
+      a.active(href='/calculator' style="margin-left: 50px") Calculator
+      form#calculatorForm(action='/calculator', method='POST')
+        label(for='number1') Number 1:
+        input(type='number', id='number1', name='number1', required)
+        br
+        label(for='number2') Number 2:
+        input(type='number', id='number2', name='number2', required)
+        br
+        label(for='operation') Operation:
+        select(id='operation', name='operation')
+          option(value='addition') Addition
+          option(value='multiplication') Multiplication
+        br
+        button(type='submit' style="margin-top: 20px;") Calculate
+      if result
+        p Result: #{result}
+    script(src='../assets/js/calculator.js')

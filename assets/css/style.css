@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .container{
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
+
+  a:hover{
+    background-color: rgb(106, 105, 105);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+
+  select{
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid black;
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: rgb(22, 97, 234);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
+
+  button:hover{
+    background-color: rgb(12, 60, 148);
+  }
+
+  .active{
+    background-color: rgb(12, 60, 148);
+  }
+  
+  ul {
+    padding: 2px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  
+  .delete-form {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .delete-form button {
+    background-color: #ff5c5c;
+    transition-duration: 0.5s;
+  }
+
+  .delete-form button:hover {
+    background-color: #ed1d1d;
+  }
+
+  #calculatorForm{
+    margin-top: 30px;
+  }
+
+
+  
